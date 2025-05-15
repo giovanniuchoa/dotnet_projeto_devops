@@ -13,8 +13,8 @@ steps:
     packageType: 'sdk'
     version: '9.0.200' # ajuste conforme a versão do seu projeto .NET
 
-- script: dotnet restore YourProject.sln
+- script: dotnet restore dotnet_projeto_devops.csproj
   displayName: 'dotnet restore'
 
-- script: dotnet build YourProject.sln --configuration $(buildConfiguration)
+- script: dotnet build dotnet_projeto_devops.csproj --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
